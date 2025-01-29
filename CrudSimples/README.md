@@ -1,6 +1,6 @@
 # Sistema de cadastro
 
-Aqui foi utilizado o basico de logica de programação:
+## Aqui foi utilizado o basico de logica de programação:
 
 - Laços de repetição ( FOR e WHILE)
 - Metodos e Classes
@@ -8,8 +8,16 @@ Aqui foi utilizado o basico de logica de programação:
 - Switch cases
 - Entrada de dados do usuario por meio do Scanner
 
+## Funcionalidades:
+- **Cadastro de Ninja:** O usuário pode cadastrar novos ninjas até atingir o limite especificado.
+- **Visualização:** Exibe os ninjas cadastrados e suas respectivas posições.
+- **Alteração:** Permite a alteração do nome de um ninja, usando a posição numérica.
+- **Deletação:** Permite a exclusão de um ninja, e o novo ninja criado ocupa a posição de onde o anterior foi apagado.
+- **Encerramento:** Finaliza o programa e exibe uma mensagem de encerramento.
+
 Para executar o programa, deve baixar o arquivo Main.java e abri-lo na sua IDEA, depois baixar a pasta "pro" e coloca-lo na pasta 
 do codigo. Depois é so executar
 
-O projeto é um CRUD simples, que seria um cadastro de "Ninjas" aonde o usuario pode adicionar o nome do ninja ao banco de dados,
-ver os ninjas cadastrados e alterar algum ninja, informando o numero da posição que ele está quando vai em ninjas cadastrados.
+## O que precisa ter para rodar
+- IDEA ( Utilizei a Intellij)
+- Java 17 ( Foi utilizado a versão 23, porem a 17 deve rodar) 
