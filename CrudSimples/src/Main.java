@@ -7,7 +7,8 @@ public class Main {
 
         double soma1;
         double roubo = 0;
-        projetinho Projeto = new projetinho();
+        projetinho Projeto = new projetinho(3); //aqui você define o tanto de ninja
+                                                            //que podem ser cadastrados
 
         Scanner sc = new Scanner(System.in);
 

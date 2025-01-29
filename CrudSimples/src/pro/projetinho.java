@@ -8,21 +8,29 @@ public class projetinho {
    int ent;
    int contador = 0;
    int alterar;
+   int apagar;
 
+
+    public projetinho(int tamanhoArray) {
+        this.name = new String[tamanhoArray]; // Permite definir o tamanho da lista de ninjas ao criar o objeto
+        this.contador = 0;
+    }
 
     public void entrada (Scanner sc) {
        System.out.println("====== CADASTRO NINJA ======");
        System.out.println("1 cadastrar ninja");
        System.out.println("2 ver ninjas cadastrados");
        System.out.println("3 alterar informações");
-       System.out.println("4 encerrar programa");
+       System.out.println("4 Deletar Ninja");
+       System.out.println("5 encerrar programa");
        ent = sc.nextInt();
        sc.nextLine();
+        System.out.println();
 
     }
 
     public void interfaci (Scanner sc) {
-       while (ent != 4) {
+       while (ent != 5) {
           switch (ent) {
 
              case 1: cadastro(sc); entrada(sc);
@@ -34,8 +42,7 @@ public class projetinho {
              case 3: alterar(sc);entrada(sc);
                 break;
 
-             case 4:
-                /*  System.out.println("Encerrando programa...");*/
+             case 4: deletar(sc); entrada(sc);
                 break;
 
              default:
@@ -51,7 +58,7 @@ public class projetinho {
 
     public void cadastro (Scanner sc) {
 
-      if (contador == 3 ){
+      if (contador == name.length ){
          System.out.println("Você atingiu o numero maximo de ninjas cadastrados, altere algum ninja para adicionar outro:");
       }
       else {
@@ -59,6 +66,7 @@ public class projetinho {
          name[contador] = sc.nextLine();
          contador += 1;
          System.out.println("xxxxxxx NINJA CADASTRADO COM SUCESSO xxxxxxx");
+          System.out.println();
 
 
       }
@@ -66,7 +74,11 @@ public class projetinho {
 
     public void verninjas () {
        for (int i = 0; i < name.length; i++) {
-          System.out.println("Ninja " + i + " = " + name[i]);
+
+           if (name[i] != null) {
+               System.out.println("Ninja " + i + " = " + name[i]);
+           }
+
 
        }
     }
@@ -79,7 +91,19 @@ public class projetinho {
        System.out.println("Agora digite o nome do novo ninja:");
        name[alterar] = sc.nextLine();
        System.out.println("****** NOME ALTERADO COM SUCESSO ******");
+        System.out.println();
 
+
+    }
+
+    public void deletar (Scanner sc) {
+       System.out.println("Digite o numero do Ninja que você quer Apagar:");
+       apagar = sc.nextInt();
+       sc.nextLine();
+       name[apagar] = null;
+       System.out.println("****** NINJA DELETADO COM SUCESSO ******");
+       System.out.println();
+       contador = apagar;
 
     }
 
