@@ -66,7 +66,9 @@ public class projetinho {
 
     public void verninjas () {
        for (int i = 0; i < name.length; i++) {
-          System.out.println("Ninja " + i + " = " + name[i]);
+           if (name[i] != null) {
+               System.out.println("Ninja " + i + " = " + name[i]);
+           }
 
        }
     }
