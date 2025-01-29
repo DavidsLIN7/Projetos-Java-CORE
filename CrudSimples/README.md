@@ -8,7 +8,7 @@ Aqui foi utilizado o basico de logica de programação:
 - Switch cases
 - Entrada de dados do usuario por meio do Scanner
 
-Para executar o programa, deve baixar o arquivo Main.java e abri-lo na sua IDEA, depois baixar a pasta pro e coloca-lo na pasta 
+Para executar o programa, deve baixar o arquivo Main.java e abri-lo na sua IDEA, depois baixar a pasta "pro" e coloca-lo na pasta 
 do codigo. Depois é so executar
 
 O projeto é um CRUD simples, que seria um cadastro de "Ninjas" aonde o usuario pode adicionar o nome do ninja ao banco de dados,
