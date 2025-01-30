@@ -5,17 +5,14 @@ public class Main {
     public static void main(String[]Args){
 
 
-        double soma1;
-        double roubo = 0;
         projetinho Projeto = new projetinho(3); //aqui você define o tanto de ninja
-                                                            //que podem ser cadastrados
+        //que podem ser cadastrados
 
         Scanner sc = new Scanner(System.in);
 
-        /*  System.out.printf("O resultado %d", soma2);*/
 
         Projeto.entrada(sc);
-        Projeto.interfaci(sc);
+        Projeto.interfaceUsuario(sc);
         Projeto.fim();
 
 

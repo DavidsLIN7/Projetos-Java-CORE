@@ -7,6 +7,8 @@
 - Estrutura condicional ( IF e Else)
 - Switch cases
 - Entrada de dados do usuario por meio do Scanner
+- Encapsulamento
+- Construtor
 
 ## Funcionalidades:
 - **Cadastro de Ninja:** O usuário pode cadastrar novos ninjas até atingir o limite especificado.
